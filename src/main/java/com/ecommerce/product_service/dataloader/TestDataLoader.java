@@ -15,6 +15,9 @@ public class TestDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        if (true) {
+            return;
+        }
         Product product = Product.builder()
                 .name("Samsung Galaxy S24")
                 .price(BigDecimal.valueOf(1200))
