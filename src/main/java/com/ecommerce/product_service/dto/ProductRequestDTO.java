@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Positive;
 import java.math.BigDecimal;
 
 public record ProductRequestDTO(
+        @NotNull(message = "El nombre es obligatorio")
         @NotBlank(message = "El nombre del producto no puede ser vacio")
         String name,
         String description,
